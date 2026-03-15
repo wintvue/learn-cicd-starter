@@ -15,7 +15,7 @@ func TestGetAPIKey(t *testing.T) {
 		{
 			name:    "no authorization header",
 			headers: http.Header{},
-			wantErr: "this should fail on purpose",
+			wantErr: "no authorization header included",
 		},
 		{
 			name:    "malformed header missing scheme",
